@@ -13,7 +13,7 @@ body {
 }
 
 .container .login-form {
-    width:40vw;
+    width:800px;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -31,15 +31,18 @@ body {
 .container .login-form form{
     display: flex;
     flex-direction: column;
+    width:50%;
 }
 
 .container .login-form form p{
-   width: 100%;
    margin-bottom:0;
+   display: flex;
+   justify-content: center;
 }
 
 .container .login-form form input[type="text"], .container .login-form form input[type="password"],.container .login-form form input[type="submit"]{
     padding:10px 0 10px 0;
+    width: 90%;
 }
 
 .container .login-form form input[type="submit"]{
