@@ -31,17 +31,22 @@ body {
 .container .login-form form{
     display: flex;
     flex-direction: column;
-    width: 60%;
+}
+
+.container .login-form form p{
+   width: 100%;
+   margin-bottom:0;
 }
 
 .container .login-form form input[type="text"], .container .login-form form input[type="password"],.container .login-form form input[type="submit"]{
-    margin: 10px 0 10px 0;
     padding:10px 0 10px 0;
 }
 
 .container .login-form form input[type="submit"]{
     background-color: #1c63a7;
     color: white;
+    text-align: center;
+    width:70%;
+    display: block;
     margin: 0 auto;
-    width:50%;
 }
