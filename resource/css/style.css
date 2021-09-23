@@ -1,0 +1,47 @@
+html, body {
+    height: 100%;
+}
+body {
+    background-color:#1778bd;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.container .login-form {
+    width:40vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:40px 0 40px 0;
+    position:relative;
+}
+
+.container .login-form img{ 
+    position: absolute;
+    left: 10px;
+    top:10px;
+}
+
+.container .login-form form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.container .login-form form input[type="text"], .container .login-form form input[type="password"],.container .login-form form input[type="submit"]{
+    margin: 10px 0 10px 0;
+    padding:10px 0 10px 0;
+}
+
+.container .login-form form input[type="submit"]{
+    background-color: #1c63a7;
+    color: white;
+    margin: 0 auto;
+    width:50%;
+}
