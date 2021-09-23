@@ -22,10 +22,15 @@ body {
     position:relative;
 }
 
+.container .login-form img {
+   
+}
+
 .container .login-form img{ 
     position: absolute;
-    left: 10px;
-    top:10px;
+    left: 20px;
+    top:20px;
+    width:80px;
 }
 
 .container .login-form form{
