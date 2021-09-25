@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-    height: 100%;
+    height: auto;
     width:800px;
     margin:0 auto;
 }
@@ -127,39 +127,10 @@ input::placeholder{
     box-sizing: border-box;
     border-radius: 10px;
     min-width: 100px;
+    height: auto;
     margin: 1% auto;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
     }
-
-.container.postuser{
-    background-color:white;
-    padding-top: 5px;
-    padding-left: 10px;
-    width: 10%;
-    display: flex;
-    margin: 1% auto;
-    align-items: flex-start;
-    }
-
-.container.date{
-    background-color:white;
-    padding-top: 5px;
-
-    width: 90%
-    display: flex;
-    margin: 1% auto;
-    align-items:right;
-    }
-
-.container.image{
-    background-color:white;
-    padding-top: 10%;
-    width: 90%
-    display: flex;
-    margin: 1% auto;
-    align-items:center;
-    }
-
 
 #my_paragraph {
     font-weight: bold;
