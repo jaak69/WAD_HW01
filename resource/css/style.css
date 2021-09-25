@@ -111,7 +111,6 @@ input::placeholder{
     background-color: white;
     padding-top: 60px;
     display: flex;
-    align-items: center;
     justify-content: center; 
 }
 
