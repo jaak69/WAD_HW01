@@ -112,23 +112,26 @@ input::placeholder{
 /*postit page styles*/
 
 .container.postit-page{
+    display: flex;
     background-color: white;
     padding-top: 60px;
-    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; 
+    flex: 1 0 auto;
 }
 
 .container.post {
-    background-color:black;
-    width: 80%;
-    box-shadow: gray;
-    border-radius:2%;
-    border-width: 10px;
-    border-color:blueviolet;
-    display: flex;
-    padding: 30px;
+    width: 75%;
+    padding-top: 60px;
+    background-color:tomato;
+    border-radius: 10px;
+    box-sizing: border-box;
+    min-width: 100px;
+    margin: 2% 2% 2% 0;
+    align-items: center;
+    box-shadow: 0 4px 6px #000;
+    z-index: 2;
+    position: relative;
     }
 
 #my_paragraph {
