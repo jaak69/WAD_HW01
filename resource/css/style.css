@@ -22,6 +22,7 @@ body {
     position:relative;
 }
 
+
 .container .login-form img {
    
 }
@@ -58,3 +59,60 @@ body {
     display: block;
     margin: 0 auto;
 }
+
+nav {
+    display: flex;
+    background-color: #ffffff;
+    align-items: center;
+    }
+    nav div{
+    height: 30px;
+    flex-grow: 4;
+    padding: 10px;
+    }
+    nav div img {
+    height: 100%;
+    }
+    nav div.search-container > input {
+    box-sizing: border-box;
+    height: 30px;
+    width: 80%;
+    margin: 0;
+    padding: 5px;
+    border: 1px solid #e0e0e0;
+    }
+    nav div.search-container > button {
+    box-sizing: border-box;
+    height: 30px;
+    width: 20%;
+    margin: 0;
+    padding: 5px;
+    border: 1px solid #e0e0e0;
+    cursor: pointer;
+    background-color: #e0e0e0;
+    }
+    section {
+        display: flex;
+        width: 80%;
+        margin: 30px auto;
+        }
+        
+            footer {
+                font-size: 8px;
+                font-style: italic;
+                font-weight: bold;
+                text-align: center;
+                color: #b71c1c;
+            }
+            .navbar {
+                overflow: hidden;
+                background-color: #333;
+                position: fixed;
+                top: 0;
+                width: 100%;
+              }
+              
+              .navbar div:hover {
+                background: #ddd;
+                color: black;
+              }
