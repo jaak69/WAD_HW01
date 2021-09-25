@@ -1,60 +1,104 @@
+/*Generic styles*/
+
 html, body {
     height: 100%;
 }
 body {
     background-color:#1778bd;
+    margin: 0;
 }
 
 .container {
     height: 100%;
+    width:50%;
     display: flex;
     align-items: center;
-    justify-content: center;  
+    justify-content: center; 
+    margin:auto;
 }
 
-.container .login-form {
+form{
+    display: flex;
+}
+
+form input[type="text"], form input[type="password"], form input[type="submit"]{
+    padding:10px 0 10px 0;
+    width: 90%;
+}
+
+input[type="submit"]{
+    background-color: #1c63a7;
+    color:white;
+}
+
+/*Header styles*/
+
+#main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 5px 0;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+}
+
+#main-header img {
+    height: 50px;;
+}
+
+.search-form{
+    flex-direction: row;
+    width:40%;
+}
+
+.search-form input[type="text"]{
+    flex-grow: 4;
+}
+.search-form input[type="submit"]{
+    width:100px;
+}
+
+/*Login page and form styles*/
+
+.login-form {
     width:800px;
     background-color: white;
-    display: flex;
     flex-direction: column;
     align-items: center;
     padding:40px 0 40px 0;
     position:relative;
 }
-
-.container .login-form img {
-   
-}
-
-.container .login-form img{ 
+.login-form img{ 
     position: absolute;
     left: 20px;
     top:20px;
     width:80px;
 }
 
-.container .login-form form{
-    display: flex;
+.login-form form{
     flex-direction: column;
-    width:50%;
 }
 
-.container .login-form form p{
+.login-form form p{
    margin-bottom:0;
    display: flex;
    justify-content: center;
 }
 
-.container .login-form form input[type="text"], .container .login-form form input[type="password"],.container .login-form form input[type="submit"]{
-    padding:10px 0 10px 0;
-    width: 90%;
-}
-
-.container .login-form form input[type="submit"]{
-    background-color: #1c63a7;
-    color: white;
+.login-form form input[type="submit"]{
     text-align: center;
     width:70%;
     display: block;
     margin: 0 auto;
 }
+
+/*postit page styles*/
+
+.container.postit-page{
+    background-color: white;
+    padding-top: 60px;
+}
+
