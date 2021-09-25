@@ -23,6 +23,10 @@ form input[type="text"], form input[type="password"], form input[type="submit"]{
     width: 90%;
 }
 
+form input[type="text"]:hover, form input[type="password"]:hover{
+    border: 2px solid #1c63a7;
+}
+
 input[type="submit"]{
     background-color: #1c63a7;
     color:white;
