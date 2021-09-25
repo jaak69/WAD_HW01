@@ -1,0 +1,41 @@
+html, body {
+    height: 100%;
+}
+body {
+    background-color:#1778bd;
+    margin: 0;
+}
+
+.container {
+    height: 100%;
+    width:60vw;
+    margin:0 auto;
+}
+
+.container.postit-page{
+    background-color: white;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+.container.post{
+    height: auto;
+    width: 75%;
+    margin:0 auto;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 1% auto;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
+}
+
+.container.post-top{
+    height: 40%;
+    width:100%;
+    margin:0 auto;
+    background-color:brown;
+    justify-content: space-around;
+    flex-direction: row;
+}
