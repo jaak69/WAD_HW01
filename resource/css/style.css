@@ -111,12 +111,29 @@ input::placeholder{
     background-color: white;
     padding-top: 60px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center; 
 }
 
+.container.post {
+    background-color:black;
+    width: 80%;
+    box-shadow: gray;
+    border-radius:2%;
+    border-width: 10px;
+    border-color:blueviolet;
+    display: flex;
+    padding: 30px;
+    }
+
 #my_paragraph {
     font-weight: bold;
+    }
+
+#my_caption {
+    font-weight:normal;
+    font-size: 16px;
     }
 
 .button {
