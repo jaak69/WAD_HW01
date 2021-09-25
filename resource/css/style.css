@@ -11,9 +11,6 @@ body {
 .container {
     height: 100%;
     width:800px;
-    display: flex;
-    align-items: center;
-    justify-content: center; 
     margin:auto;
 }
 
@@ -59,6 +56,12 @@ input[type="submit"]{
 }
 
 /*Login page and form styles*/
+
+.container.login {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
 
 .login-form {
     display: flex;
