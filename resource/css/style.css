@@ -207,3 +207,11 @@ div + p{
 other~p{
     color: blue;
 }
+
+span {
+    background-color: white;
+}
+
+div span {
+    background-color: yellow;
+}
