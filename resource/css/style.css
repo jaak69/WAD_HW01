@@ -133,6 +133,10 @@ input::placeholder{
     box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
     }
 
+.container.post:hover{
+    background-color:beige;
+    }
+
 #my_paragraph {
     font-weight: bold;
     }
@@ -166,11 +170,3 @@ input::placeholder{
         margin: 4px 2px;
         cursor: pointer;
       }
-
-button:hover{
-background-color: rgb(206, 40, 40);
-}
-
-div p {
-    /*background-color: green;*/
-    }
