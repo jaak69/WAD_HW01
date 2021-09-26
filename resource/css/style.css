@@ -121,23 +121,6 @@ input::placeholder{
     justify-content: center;
 }
 
-.container.post{
-    background-color:white;
-    width: 70%;
-    display: flex;
-    box-sizing: border-box;
-    border-radius: 10px;
-    min-width: 100px;
-    height: auto;
-    margin: 1% auto;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
-    }
-
-.container.post:hover{
-    background-color:beige;
-    }
-
-
 .container-post{
     background-color:white;
     width: 70%;
@@ -162,11 +145,16 @@ input::placeholder{
     display: -webkit-flex;
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 95%;
     padding: 1em;
     list-style-type: none;
     justify-content:space-between;
     align-items: center;
+}
+
+.container-post-head img{
+    width: 25px;
+    height: 25px;
 }
 
 #container-post-head img{
@@ -176,16 +164,26 @@ input::placeholder{
 .container-post-image{
     width: 100%;
     display: flex;
+    flex-grow: 1 1 0;
     flex-direction: column;
     justify-content: center;
 }
 
-.container-post-comment{
+.container-post-image img{
     width: 100%;
+    height: 100%;
+}
+
+.container-post-comment{
+    width: 95%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 1em;
+}
+
+.container-post-comment img{
+    width: 5%;
 }
 
 #my_paragraph {
@@ -203,28 +201,9 @@ input::placeholder{
     text-align: right;
     }
 
-#sidecontent h4{
-    font-size:1em;
-    font-weight:bold;
-    margin:0;
-    padding:10px 10px 2px 15px;
-    }
-    
-.button {
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-      }
-
 div + p{
     color: coral;
-  }
+}
 
 other~p{
     color: blue;
