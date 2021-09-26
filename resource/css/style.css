@@ -148,6 +148,13 @@ input::placeholder{
     text-align: right;
     }
 
+#sidecontent h4{
+    font-size:1em;
+    font-weight:bold;
+    margin:0;
+    padding:10px 10px 2px 15px;
+    }
+    
 .button {
         border: none;
         color: white;
