@@ -151,7 +151,6 @@ input::placeholder{
     height: auto;
     margin: 1% auto;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
-    padding:0 10px 0 10px;
     }
 
 .container-post:hover{
@@ -162,14 +161,14 @@ input::placeholder{
     display: -webkit-flex;
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 95%;
     padding: 1em;
     list-style-type: none;
     justify-content:space-between;
     align-items: center;
 }
 
-#container-post-head img{
+.container-post-head img{
     width: 25px;
 }
 
@@ -180,52 +179,49 @@ input::placeholder{
     justify-content: center;
 }
 
-.container-post-comment{
+.container-post-image img{
     width: 100%;
+}
+
+.container-post-comment{
+    width: 95%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 1em;
 }
 
+.container-post-comment img{
+    width: 5%;
+}
+
 #my_paragraph {
     font-weight: bold;
     }
 
-#my_caption {
+.my_caption {
     font-weight:normal;
     font-size: 16px;
     }
 
 .date{
     font-weight:normal;
-    font-size: 16px;
+    font-size: 12px;
     text-align: right;
     }
-
-#sidecontent h4{
-    font-size:1em;
-    font-weight:bold;
-    margin:0;
-    padding:10px 10px 2px 15px;
-    }
-    
-.button {
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-      }
 
 div + p{
     color: coral;
   }
 
-other~p{
+.other~p{
     color: blue;
+}
+
+span {
+    background-color:white;
+}
+
+div > span {
+    background-color:yellow;
 }
