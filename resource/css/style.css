@@ -32,6 +32,12 @@ input[type="submit"]{
     color:white;
 }
 
+input[type="submit"]:hover{
+    background-color: white;
+    color:black;
+    border: 2px solid #1c63a7;
+}
+
 input::placeholder{
     padding-left: 5px;
 }
