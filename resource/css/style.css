@@ -170,3 +170,11 @@ input::placeholder{
         margin: 4px 2px;
         cursor: pointer;
       }
+
+div + p{
+    color: coral;
+  }
+
+other~p{
+    color: blue;
+}
