@@ -151,6 +151,7 @@ input::placeholder{
     height: auto;
     margin: 1% auto;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
+    padding:0 10px 0 10px;
     }
 
 .container-post:hover{
@@ -165,11 +166,11 @@ input::placeholder{
     padding: 1em;
     list-style-type: none;
     justify-content:space-between;
-    flex: 1;
+    align-items: center;
 }
 
 #container-post-head img{
-    height: 25px;
+    width: 25px;
 }
 
 .container-post-image{
@@ -196,9 +197,9 @@ input::placeholder{
     font-size: 16px;
     }
 
-#date{
+.date{
     font-weight:normal;
-    font-size: 12px;
+    font-size: 16px;
     text-align: right;
     }
 
