@@ -120,15 +120,16 @@ input::placeholder{
     justify-content: center; 
 }
 
-.container.post {
-    background-color:black;
+.container.postit {
+    background-color:rgb(247, 240, 240);
     width: 80%;
-    box-shadow: gray;
+    box-shadow: rgb(247, 243, 243);
     border-radius:2%;
     border-width: 10px;
     border-color:blueviolet;
     display: flex;
-    padding: 30px;
+    padding: 5px;
+    align-items: center;
     }
 
 #my_paragraph {
@@ -155,7 +156,3 @@ input::placeholder{
 button:hover{
 background-color: rgb(206, 40, 40);
 }
-
-div p {
-    /*background-color: green;*/
-    }
