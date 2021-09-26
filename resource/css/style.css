@@ -9,9 +9,10 @@ body {
 }
 
 .container {
-    height: 100%;
+    height: auto;
+    min-height: 100%;
     width:800px;
-    margin:auto;
+    margin:0 auto;
 }
 
 form{
@@ -30,12 +31,6 @@ form input[type="text"]:hover, form input[type="password"]:hover{
 input[type="submit"]{
     background-color: #1c63a7;
     color:white;
-}
-
-input[type="submit"]:hover{
-    background-color: white;
-    color:black;
-    border: 2px solid #1c63a7;
 }
 
 input::placeholder{
@@ -123,40 +118,110 @@ input::placeholder{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
 }
 
-.container.postit {
-    background-color:rgb(247, 240, 240);
-    width: 80%;
-    box-shadow: rgb(247, 243, 243);
-    border-radius:2%;
-    border-width: 10px;
-    border-color:blueviolet;
+.container.post{
+    background-color:white;
+    width: 70%;
     display: flex;
-    padding: 5px;
-    flex-flow: row wrap;
-    text-align:start; 
+    box-sizing: border-box;
+    border-radius: 10px;
+    min-width: 100px;
+    height: auto;
+    margin: 1% auto;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
     }
 
-      .container.postit > * {
-        padding: 10px;
-        flex: 1 100%;
-      }
-      
-    .header {
-        background: rgb(247, 240, 240);
-      }
-      
-      .footer {
-        background: rgb(247, 240, 240);
-      }
-      
-      .main {
-        background: rgb(247, 240, 240);
-      }
+.container.post:hover{
+    background-color:beige;
+    }
 
-#my_caption {
+
+.container-post{
+    background-color:white;
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 10px;
+    min-width: 100px;
+    height: auto;
+    margin: 1% auto;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
+    }
+
+.container-post:hover{
+    background-color:beige;
+    }
+
+.container-post-head{
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    padding: 1em;
+    list-style-type: none;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.container-post-head img{
+    width: 25px;
+}
+
+.container-post-image{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-post-image img{
+    width: 100%;
+}
+
+.container-post-comment{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+}
+
+.container-post-comment img{
+    width: 5%;
+}
+
+#my_paragraph {
+    font-weight: bold;
+    }
+
+.my_caption {
     font-weight:normal;
-    font-size: 20px;
+    font-size: 16px;
     }
+
+.date{
+    font-weight:normal;
+    font-size: 12px;
+    text-align: right;
+    }
+
+div + p{
+    color: coral;
+  }
+
+.other~p{
+    color: blue;
+}
+
+span {
+    background-color:white;
+}
+
+div > span {
+    background-color:yellow;
+}
