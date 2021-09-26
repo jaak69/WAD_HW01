@@ -121,29 +121,42 @@ input::placeholder{
     background-color: white;
     padding-top: 60px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center; 
 }
 
-#my_paragraph {
-    font-weight: bold;
+.container.postit {
+    background-color:rgb(247, 240, 240);
+    width: 80%;
+    box-shadow: rgb(247, 243, 243);
+    border-radius:2%;
+    border-width: 10px;
+    border-color:blueviolet;
+    display: flex;
+    padding: 5px;
+    flex-flow: row wrap;
+    text-align:start; 
     }
 
-.button {
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
+      .container.postit > * {
+        padding: 10px;
+        flex: 1 100%;
+      }
+      
+    .header {
+        background: rgb(247, 240, 240);
+      }
+      
+      .footer {
+        background: rgb(247, 240, 240);
+      }
+      
+      .main {
+        background: rgb(247, 240, 240);
       }
 
-button:hover{
-background-color: rgb(206, 40, 40);
-}
-
-div p {
-    /*background-color: green;*/
+#my_caption {
+    font-weight:normal;
+    font-size: 20px;
     }
