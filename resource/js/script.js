@@ -7,8 +7,12 @@ $(function() {
             let div_comment = $('<div class = "container-post-comment">');
             let date = $('<p class="date">').text(post.date);
             let caption = $('<p class="my_caption">').text(post.caption);
-            article.append(div_head, div_image, div_comment);
+            let img = $('<img>').img(post.post_image);
+            article.append(div_head);
+            article.append(div_image);
+            article.append(div_comment);
             div_head.append(date);
+            div_image.append(img);
             div_comment.append(caption);
             $('body').append(article)
         }
