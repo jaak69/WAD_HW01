@@ -12,7 +12,8 @@
         "id": 2,
         "user_data":{ "name":"Mick Jagger", "e-mail":"mick99@example.com"},
         "caption": "Which weighs more, a pound of feathers or a pound of bricks?",
-        "date":"2021-10-21T06:06:06.419Z"
+        "date":"2021-10-21T06:06:06.419Z",
+        "post_image": ""
       },
       {
         "userId": 1,
@@ -27,7 +28,8 @@
         "id": 4,
         "user_data":{ "name":"Mick Jagger", "e-mail":"mick99@example.com"},
         "caption": "Something, something, something?",
-        "date":"2021-10-21T08:06:06.419Z"
+        "date":"2021-10-21T08:06:06.419Z",
+        "post_image": ""
       },
       {
         "userId": 1,
@@ -50,7 +52,8 @@
           "id": 7,
           "user_data":{ "name":"Mick Jagger", "e-mail":"mick99@example.com"},
           "caption": "Which weighs more, a pound of feathers or a pound of bricks?",
-          "date":"2021-10-21T11:06:06.419Z"
+          "date":"2021-10-21T11:06:06.419Z",
+          "post_image": ""
         },
         {
           "userId": 1,
@@ -65,7 +68,8 @@
           "id": 9,
           "user_data":{ "name":"Mick Jagger", "e-mail":"mick99@example.com"},
           "caption": "Something, something, something?",
-          "date":"2021-10-21T13:06:06.419Z"
+          "date":"2021-10-21T13:06:06.419Z",
+          "post_image": ""
         },
         {
           "userId": 1,
