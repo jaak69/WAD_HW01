@@ -4,10 +4,10 @@ $( document ).ready(function() {
 
         for (let post of posts) {
             
-            const userIcon = $('<img>')
+            let userIcon = $('<img>')
             userIcon.attr("src","resource/images/user-circle.svg")
             userIcon.attr("alt","user icon")
-            var likeIcon = $('<img>')
+            let likeIcon = $('<img>')
             likeIcon.attr("src","resource/images/thumbs-up.jpeg")
             likeIcon.attr("alt","like")
             
@@ -16,7 +16,7 @@ $( document ).ready(function() {
             //post head
             let divHead = $('<div>', {"class":"container-post-head"})
                 //add user icon image then icon is always the same
-                divHead.append(this.userIcon)
+                divHead.append(userIcon)
                 divHead.append($('<p class="date">').text(post.date))
 
             //post image
@@ -27,6 +27,7 @@ $( document ).ready(function() {
             //post content
             let divContent = $('<div>', {"class":"container-post-comment"})
             divContent.append($("<p>",{"class":"my_caption"}).text(post.caption))
+            divContent.append(likeIcon)
 
             //assemble article
             article.append(divHead)
