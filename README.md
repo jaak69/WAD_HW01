@@ -1,4 +1,4 @@
-Web Application Development homework 2
+Web Application Development (LTAT.05.004) - Homework 2
 
 Team: Jaak Ivask, Mario Käära, Peeter Niidas
 
@@ -25,8 +25,4 @@ Solutions and explanations:
 
 3. JSON is hosted via service at extendclass.com at the address https://json.extendsclass.com/bin/18f70eea2434
 
-4. jQuery with local JSON file is implemented in file script.js usege via index.html
-
-5. jQuery with remote JSON file is implemented in file script_web.js usege via index_web.html
-
-6. 
+4-5.  jQuery with local JSON file and remote JSON file is implemented in file script.js. To use either of them comments on lines 7 and 8 must be toggled
