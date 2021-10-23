@@ -1,17 +1,48 @@
 $( document ).ready(function() {
-    let contentContainer = $(section.container.postit-page)
 
     $.get("resource/json/posts.json", function(posts) {
+
+        let article = $('<article>', {"class":"container-post"})
+        let userIcon = $('img',{"src":"resource/images/user-circle.svg","alt":"user icon"})
+        let likeIcon = $('img',{"src":"resource/images/thumbs-up.jpeg","alt":"like icon"})
+
         for (post of posts) {
-            let article = $('<article>', {"class":"container-post"})
+            
+            //create new article
+            let article = $('section', {"class":"container postit-page"})
+            //post head
+            let divHead = $('<div>', {"class":"container-post-head"})
+                //add user icon image then icon is always the same
+                divHead.append(userIcon)
+                divHead.append($('<p class="date">').text(post.date))
 
+            //post image
+            let postImage = $('<img>')
+            postImage.attr("src",post.postImage)
+            postImage.attr("alt", "post no" + post.id)
+
+            //post content
+            let divContent = $('<div>', {"class":"container-post-comment"})
+            divContent.append($("p",{"class":"my_caption"}).text(post.caption))
+
+            //assemble article
+            article.append(divHead)
+            article.append(postImage)
+            article.append(divContent)
+            //add article to page
+            //$("section").append(article)
+
+            let h2 = $("H2")
+            h2.text(post.caption)
+
+            $("section").append(h2)
         }
-    }
+        
+    })
+})
 
-});
 
-
-$(function() {
+/*(function() {
     $.get("resource/json/posts.json", function(posts) {
         for (post of posts) {
             let article = $('<article class="container-post">');
@@ -30,7 +61,7 @@ $(function() {
             $('body').append(article)
         }
     })
-});
+});*/
 
 /*
 {
