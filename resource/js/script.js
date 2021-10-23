@@ -24,7 +24,7 @@ function displayPosts() {
                 //add user icon image then icon is always the same
                 divHead.append(userIcon)
                 divHead.append('<p class="user_info">' + post.user_data.name + ' (' + post.user_data.email + ')</p>' )
-                divHead.append($('<p class="date">').text(post.date))
+                divHead.append($('<p class="date">').text(displayDateTime(post)))
 
             //post image
             let divImage = $('<div>', {"class":"container-post-image"})
@@ -55,6 +55,11 @@ function postImage(singlePost){
     postImage.attr("alt", "post no" + singlePost.id)
 
     return postImage 
+}
+
+function displayDateTime(singlePost){
+    const splittedDateTime = singlePost.date.split('T')
+    return splittedDateTime[0].split('-').reverse().join('.') + ' ' + splittedDateTime[1].slice(0,5)
 }
 
 displayPosts() //Siin on mul nüüd küsimus, kas see peaks siiski olema document.readys või mitte.
