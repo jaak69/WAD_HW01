@@ -1,6 +1,4 @@
 $( document ).ready(function() {
-    
-    $(".user-menu ul").css("display","none")
 
     $(".user-menu").click(function() {
         $(".user-menu ul").toggle()
