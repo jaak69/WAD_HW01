@@ -31,7 +31,7 @@ function displayPosts() {
             postImage.attr("alt", "post no" + post.id)
 
             //post content
-            let divContent = $('<div>', {"class":"container-post-comment"})
+            let divContent = $('<div>', {"class":"container post-comment"})
             divContent.append($("<p>",{"class":"my_caption"}).text(post.caption))
             divContent.append(likeIcon)
 
