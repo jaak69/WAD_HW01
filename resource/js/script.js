@@ -1,5 +1,7 @@
 $( document ).ready(function() {
 
+    displayPosts()
+
     $(".user-menu").click(function() {
         $(".user-menu ul").toggle()
     })
@@ -8,8 +10,8 @@ $( document ).ready(function() {
 
 function displayPosts() {
 
-    $.getJSON("resource/json/posts.json", function(posts) {
-    //$.getJSON('https://json.extendsclass.com/bin/18f70eea2434', function(posts) {
+    // $.getJSON("resource/json/posts.json", function(posts) {
+    $.getJSON('https://json.extendsclass.com/bin/18f70eea2434', function(posts) {
 
         for (let post of posts) {
             
@@ -65,17 +67,3 @@ function displayDateTime(singlePostDate){
     return splittedDateTime[0].split('-').reverse().join('.') + ' ' + splittedDateTime[1].slice(0,5)
 }
 
-
-
-displayPosts() //Siin on mul nüüd küsimus, kas see peaks siiski olema document.readys või mitte.
-
-/*
-{
-      "userId": 1,
-      "id": 1,
-      "user_data":{ "name":"John Doe", "e-mail":"john.doe@example.com"},
-      "caption": "I think it's going to rain",
-      "date":"2021-10-21T05:55:06.419Z",
-      "post_image": "resource/images/rain.png"
-    },
-    */

@@ -23,6 +23,7 @@ Solutions and explanations:
 
 ![alt text](https://github.com/jaak69/WAD_HW02/blob/dc602318407a1a8ee8c29971a7063b4ffbadb2d3/resource/images/validation.png?raw=True)
 
-3. JSON is hosted via service at extendclass.com at the address https://json.extendsclass.com/bin/18f70eea2434
+3. JSON is hosted via service at extendclass.com at the address https://json.extendsclass.com/bin/18f70eea2434 
+to modify uploaded json use url: https://extendsclass.com/jsonstorage/18f70eea2434
 
 4-5.  jQuery with local JSON file and remote JSON file is implemented in file script.js. To use either of them comments on lines 7 and 8 must be toggled
