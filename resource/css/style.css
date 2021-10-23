@@ -193,6 +193,7 @@ input::placeholder{
 
 .container-post-comment img{
     width: 5%;
+    border-radius: 5px;
 }
 
 #my_paragraph {
