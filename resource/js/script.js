@@ -26,11 +26,16 @@ function displayPosts() {
                 divHead.append($('<p class="date">').text(post.date))
 
             //post image
-            let divImage = $('<div>', {"class":"container-post-image"})
-            let postImage = $('<img>')
-            postImage.attr("src", post.post_image)
-            postImage.attr("alt", "post no" + post.id)
-            divImage.append(postImage)
+            let divImage = null
+            let postImage = null
+
+            if (post.post_image != ""){
+                divImage = $('<div>', {"class":"container-post-image"})
+                postImage = $('<img>')
+                postImage.attr("src", post.post_image)
+                postImage.attr("alt", "post no" + post.id)
+                divImage.append(postImage)
+            } 
 
             //post content
             let divContent = $('<div>', {"class":"container-post-comment"})
