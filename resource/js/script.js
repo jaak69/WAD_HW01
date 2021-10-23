@@ -24,7 +24,7 @@ function displayPosts() {
                 //add user icon image then icon is always the same
                 divHead.append(userIcon)
                 divHead.append('<p class="user_info">' + post.user_data.name + ' (' + post.user_data.email + ')</p>' )
-                divHead.append($('<p class="date">').text(displayDateTime(post)))
+                divHead.append($('<p class="date">').text(displayDateTime(post.date)))
 
             //post image
             let divImage = $('<div>', {"class":"container-post-image"})
@@ -57,8 +57,8 @@ function postImage(singlePost){
     return postImage 
 }
 
-function displayDateTime(singlePost){
-    const splittedDateTime = singlePost.date.split('T')
+function displayDateTime(singlePostDate){
+    let splittedDateTime = singlePostDate.split('T')
     return splittedDateTime[0].split('-').reverse().join('.') + ' ' + splittedDateTime[1].slice(0,5)
 }
 
