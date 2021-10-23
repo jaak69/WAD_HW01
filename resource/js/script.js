@@ -31,7 +31,8 @@ function displayPosts() {
 
             //post content
             let divContent = $('<div>', {"class":"container-post-comment"})
-            divContent.append($("<p>",{"class":"my_caption"}).text(post.caption))
+            divContent.append($("<h2>",{"class":"my_caption"}).text(post.caption))
+            divContent.append(post.post_content)
             divContent.append(likeIcon)
 
             //assemble article
