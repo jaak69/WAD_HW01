@@ -1,12 +1,11 @@
 $( document ).ready(function() {
-
-   
     
 })
 
 function displayPosts() {
 
-    $.get("resource/json/posts.json", function(posts) {
+    //$.get("resource/json/posts.json", function(posts) {
+    $.get("https://jsonkeeper.com/b/7IXW", function(posts) {
 
         for (let post of posts) {
             
