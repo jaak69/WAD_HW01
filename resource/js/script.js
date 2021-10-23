@@ -1,5 +1,11 @@
 $( document ).ready(function() {
     
+    $(".user-menu ul").css("display","none")
+
+    $(".user-menu").click(function() {
+        $(".user-menu ul").toggle()
+    })
+
 })
 
 function displayPosts() {
@@ -60,6 +66,8 @@ function displayDateTime(singlePostDate){
     let splittedDateTime = singlePostDate.split('T')
     return splittedDateTime[0].split('-').reverse().join('.') + ' ' + splittedDateTime[1].slice(0,5)
 }
+
+
 
 displayPosts() //Siin on mul nüüd küsimus, kas see peaks siiski olema document.readys või mitte.
 
