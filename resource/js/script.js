@@ -4,8 +4,8 @@ $( document ).ready(function() {
 
 function displayPosts() {
 
-    //$.get("resource/json/posts.json", function(posts) {
-    $.get("https://jsonkeeper.com/b/7IXW", function(posts) {
+    //$.getJSON("resource/json/posts.json", function(posts) {
+    $.getJSON('https://json.extendsclass.com/bin/18f70eea2434', function(posts) {
 
         for (let post of posts) {
             
