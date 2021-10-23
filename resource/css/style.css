@@ -226,7 +226,7 @@ div > span {
     background-color:yellow;
 }
 
-.user-menu{
+.user-menu ul{
     position: absolute;
     right:20px;
     background-color: white;
