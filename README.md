@@ -21,5 +21,12 @@ Solutions and explanations:
 
 2. JSON was validated via jsonlint.com
 
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![alt text](https://github.com/jaak69/WAD_HW02/blob/76cb46cdac8a84e15fba6bca4f05e0e0fc835924/resource/images/validation.png?raw=true "Screenshot of the validation result")
 
+3. JSON is hosted via hosting service jsonkeeper.com at the address https://jsonkeeper.com/b/7IXW
+
+4. jQuery with local JSON file is implemented in file script.js usege via index.html
+
+5. jQuery with remote JSON file is implemented in file script_web.js usege via index_web.html
+
+6. 
