@@ -21,7 +21,7 @@ Solutions and explanations:
 
 2. JSON was validated via jsonlint.com
 
-![alt text](https://github.com/jaak69/WAD_HW02/blob/dc602318407a1a8ee8c29971a7063b4ffbadb2d3/resource/images/validation.png "Screenshot of the validation result")
+![alt text](https://github.com/jaak69/WAD_HW02/blob/dc602318407a1a8ee8c29971a7063b4ffbadb2d3/resource/images/validation.png?raw=True)
 
 3. JSON is hosted via service at extendclass.com at the address https://json.extendsclass.com/bin/18f70eea2434
 
