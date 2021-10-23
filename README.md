@@ -23,7 +23,7 @@ Solutions and explanations:
 
 ![alt text](https://github.com/jaak69/WAD_HW02/blob/76cb46cdac8a84e15fba6bca4f05e0e0fc835924/resource/images/validation.png?raw=true "Screenshot of the validation result")
 
-3. JSON is hosted via hosting service jsonkeeper.com at the address https://jsonkeeper.com/b/7IXW
+3. JSON is hosted via service at extendclass.com at the address https://json.extendsclass.com/bin/18f70eea2434
 
 4. jQuery with local JSON file is implemented in file script.js usege via index.html
 
