@@ -18,7 +18,7 @@ function displayPosts() {
             likeIcon.attr("alt","like")
             
             //create new article
-            let article = $('<article>', {"class":"container-postit-page"})
+            let article = $('<article>', {"class":"container-post"})
             //post head
             let divHead = $('<div>', {"class":"container-post-head"})
                 //add user icon image then icon is always the same
@@ -26,9 +26,11 @@ function displayPosts() {
                 divHead.append($('<p class="date">').text(post.date))
 
             //post image
+            let divImage = $('<div>', {"class":"container-post-image"})
             let postImage = $('<img>')
             postImage.attr("src", post.post_image)
             postImage.attr("alt", "post no" + post.id)
+            divImage.append(postImage)
 
             //post content
             let divContent = $('<div>', {"class":"container-post-comment"})
@@ -37,7 +39,7 @@ function displayPosts() {
 
             //assemble article
             article.append(divHead)
-            article.append(postImage)
+            article.append(divImage)
             article.append(divContent)
             //add article to page
             $("section").append(article) 
