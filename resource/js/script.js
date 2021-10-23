@@ -1,5 +1,11 @@
 $( document ).ready(function() {
 
+   
+    
+})
+
+function displayPosts() {
+
     $.get("resource/json/posts.json", function(posts) {
 
         for (let post of posts) {
@@ -34,13 +40,12 @@ $( document ).ready(function() {
             article.append(postImage)
             article.append(divContent)
             //add article to page
-            $("section").append(article)
-
-            //$("section.container.postit-page").add(article)
+            $("section").append(article) 
         }
-        
     })
-})
+}
+
+displayPosts() //Siin on mul nüüd küsimus, kas see peaks siiski olema document.readys või mitte.
 
 
 /*(function() {
