@@ -17,11 +17,11 @@ Tasks:
 
 Solutions and explanations:
 
-1. JSON file was created using...
+1. JSON file was created using https://jsoneditoronline.org/ service
 
 2. JSON was validated via jsonlint.com
 
-![alt text](https://github.com/jaak69/WAD_HW02/blob/76cb46cdac8a84e15fba6bca4f05e0e0fc835924/resource/images/validation.png?raw=true "Screenshot of the validation result")
+![alt text](https://github.com/jaak69/WAD_HW02/blob/dc602318407a1a8ee8c29971a7063b4ffbadb2d3/resource/images/validation.png?raw=True)
 
 3. JSON is hosted via service at extendclass.com at the address https://json.extendsclass.com/bin/18f70eea2434
 
