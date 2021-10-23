@@ -26,16 +26,8 @@ function displayPosts() {
                 divHead.append($('<p class="date">').text(post.date))
 
             //post image
-            let divImage = null
-            let postImage = null
-
-            if (post.post_image != ""){
-                divImage = $('<div>', {"class":"container-post-image"})
-                postImage = $('<img>')
-                postImage.attr("src", post.post_image)
-                postImage.attr("alt", "post no" + post.id)
-                divImage.append(postImage)
-            } 
+            let divImage = $('<div>', {"class":"container-post-image"})
+            divImage.append(postImage(post))           
 
             //post content
             let divContent = $('<div>', {"class":"container-post-comment"})
@@ -50,6 +42,17 @@ function displayPosts() {
             $("section").append(article) 
         }
     })
+}
+
+function postImage(singlePost){
+
+    if (singlePost.post_image == "") return null
+  
+    let postImage = $('<img>')
+    postImage.attr("src", singlePost.post_image)
+    postImage.attr("alt", "post no" + singlePost.id)
+
+    return postImage 
 }
 
 displayPosts() //Siin on mul nüüd küsimus, kas see peaks siiski olema document.readys või mitte.
