@@ -2,16 +2,14 @@ $( document ).ready(function() {
 
     $.get("resource/json/posts.json", function(posts) {
 
-        const userIcon = $('<img>')
-        userIcon.attr("src","resource/images/user-circle.svg")
-        userIcon.attr("alt","user icon")
-        var likeIcon = $('<img>')
-        likeIcon.attr("src","resource/images/thumbs-up.jpeg")
-        likeIcon.attr("alt","like")
-
         for (let post of posts) {
             
-          
+            const userIcon = $('<img>')
+            userIcon.attr("src","resource/images/user-circle.svg")
+            userIcon.attr("alt","user icon")
+            var likeIcon = $('<img>')
+            likeIcon.attr("src","resource/images/thumbs-up.jpeg")
+            likeIcon.attr("alt","like")
             
             //create new article
             let article = $('<article>', {"class":"container postit-page"})
