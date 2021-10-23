@@ -12,7 +12,7 @@ $( document ).ready(function() {
             likeIcon.attr("alt","like")
             
             //create new article
-            let article = $('<article>', {"class":"container postit-page"})
+            let article = $('<article>', {"class":"container-postit-page"})
             //post head
             let divHead = $('<div>', {"class":"container-post-head"})
                 //add user icon image then icon is always the same
