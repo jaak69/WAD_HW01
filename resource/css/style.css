@@ -204,7 +204,7 @@ input::placeholder{
     font-size: 20px;
     }
 
-.date{
+.date , .user_info{
     font-weight:normal;
     font-size: 12px;
     text-align: right;

@@ -23,6 +23,7 @@ function displayPosts() {
             let divHead = $('<div>', {"class":"container-post-head"})
                 //add user icon image then icon is always the same
                 divHead.append(userIcon)
+                divHead.append('<p class="user_info">' + post.user_data.name + ' (' + post.user_data.email + ')</p>' )
                 divHead.append($('<p class="date">').text(post.date))
 
             //post image
