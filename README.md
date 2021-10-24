@@ -17,7 +17,7 @@ Tasks:
 
 Solutions and explanations:
 
-1. JSON file was created using https://jsoneditoronline.org/ service
+1. JSON file was created manually and later edited using https://jsoneditoronline.org/ service
 
 2. JSON was validated via jsonlint.com
 
