@@ -3,7 +3,9 @@ $( document ).ready(function() {
     displayPosts()
 
     $(".user-menu").click(function() {
-        $(".user-menu ul").toggle()
+        //$(".user-menu ul").toggle()
+        $(".user-menu ul").animate({
+            height: 'toggle'})
     })
 
 })
